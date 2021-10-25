@@ -1,7 +1,7 @@
 {
-    "name": "caixaeletronico",
+    "name": "SistemaBancario",
     "version": "1.0.0",
-    "description": "Projeto de CaixaEletronico para seus clientes",
+    "description": "Projeto de SistemaBancario para seus clientes",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
