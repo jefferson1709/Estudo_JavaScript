@@ -35,7 +35,6 @@ export class Conta {
             this._saldo -= valorSacado;
             return valorSacado;
         }
-
         return 0;
     }
 
