@@ -1,0 +1,34 @@
+/* Modelo de um comentario em CSS*/
+body{
+    background-image: url(backgourd-pagina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Principal{
+    color: dodgerBlue;
+    background-color: blue;
+}
+
+#Titulo{
+    color: #d32390;
+}
+#Paragrafos{
+    /* ordem de criação inline
+    background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+    */
+    background: url(img-fundo.jpg) center/cover no-repeat fixed;
+    /* background-image: url(img-fundo.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    */
+}
+
+.sub_div{
+    background-color: yellowgreen;
+}
+
+.texto_verde{ 
+    color:rgba(0,120,0,0.8); 
+}
