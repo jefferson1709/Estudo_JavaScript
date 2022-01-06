@@ -55,6 +55,17 @@ body{
     height: 10px;
 }
 
+#base{
+    background-color: red;
+    height: 10px;
+}
+
+#container_a{
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
 
 .sub_div{
     background-color: yellowgreen;
