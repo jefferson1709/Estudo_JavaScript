@@ -1,6 +1,6 @@
 /* Modelo de um comentario em CSS*/
 body{
-    background-image: url(backgourd-pagina.jpg);
+    /*background-image: url(backgourd-pagina.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,6 +24,37 @@ body{
     background-attachment: local;
     */
 }
+#in{
+    background-color: green;
+    width: 1in;
+    height: 1in;
+}
+#cm{
+    background-color: blue;
+    width: 1cm;
+    height: 1cm;
+}
+#mm{
+    background-color: red;
+    width: 5mm;
+    height: 5mm;
+}
+#pc{
+    background-color: green;
+    width: 1pc;
+    height: 1pc;
+}
+#pt{
+    background-color: blue;
+    width: 10pt;
+    height: 10pt;
+}
+#px{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
 
 .sub_div{
     background-color: yellowgreen;
@@ -31,4 +62,19 @@ body{
 
 .texto_verde{ 
     color:rgba(0,120,0,0.8); 
+}
+
+.container{
+    /*font-size: 20px;*/
+    width: 30%;
+    /*height: 10vmin*/
+    background: red;
+}
+
+.insider{
+    /*font-size: 2rem;
+    font-size: 2em;*/
+    width: 20vw;
+    /*height: 10vh;*/
+    background: blue;
 }
