@@ -3,31 +3,42 @@
     <head>
         <meta charset="utf-8">
         <title>Minha Primeira Pagina</title>
+        <!-- Modelo de um css interno -->
+        <style>p{color: red;}</style>
+        <!-- Modelo de um css externo -->
+        <link href="style.css" rel="stylesheet">
     </head>   
     <body>
-        <h1>Titulo</h1>
+        <a href="#escudo_Viking">escudo_Viking</a>
+        <h1 id="Titulo">Titulo</h1>
         <h2>Subtitulo</h2>
-        <p>Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num 
+        <!-- Modelo de css inline-->
+        <p style="color: blue;">Css-inline<p>
+        <!-- Modelo de css externo-->
+        <p id="Principal"> Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num 
             copo é motivis de denguis.Atirei o pau no gatis, per gatis num 
             morreus.Nullam volutpat risus nec leo commodo, ut interdum diam 
             laoreet. Sed non consequat odio.Copo furadis é disculpa de bebadis,
             arcu quam euismod magna.</p>
-        <p>Quem manda na minha terra sou euzis!Nec orci ornare consequat. 
+        <!-- Modelo de css interno-->
+        <p> Quem manda na minha terra sou euzis!Nec orci ornare consequat. 
             Praesent lacinia ultrices consectetur. Sed non ipsum felis.Mauris 
             nec dolor in eros commodo tempor. Aenean aliquam molestie leo, 
             vitae iaculis nisl.Quem num gosta di mé, boa gentis num é.</p>
-        <p>Esse e um <strong> Texto em negrito<strong></p>
-        <p>Esse e um <em> Texto em italico</em></p>
-        <p>Esse e um <mark> Texto em com marcação</mark></p>
-        <p>Esse e um <small> Texto com a tag small</small></p>
-        <p>Esse e um <del> Texto que foi removido</del> e substituido por esse</p>
-        <p>Esse e um <ins> Texto que foi inserido </ins></p>
-        <p>Esse e um <sub> Texto subscript </s></p>
-        <p>Esse e um <sup> Texto superscript </sup></p>
+        <p class="texto_verde">Esse e um <strong> Texto em negrito<strong></p>
+        <p class="texto_verde">Esse e um <em> Texto em italico</em></p>
+        <p class="texto_verde">Esse e um <mark> Texto em com marcação</mark></p>
+        <p class="texto_verde">Esse e um <small> Texto com a tag small</small></p>
+        <p class="texto_verde">Esse e um <del> Texto que foi removido</del> e substituido por esse</p>
+        <p class="texto_verde">Esse e um <ins> Texto que foi inserido </ins></p>
+        <p class="texto_verde">Esse e um <sub> Texto subscript </s></p>
+        <p class="texto_verde">Esse e um <sup> Texto superscript </sup></p>
         <a href="Sobre.html">Esse e um link</a>
-        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fst2.depositphotos.com%2F1011833%2F5690%2Fi%2F600%2Fdepositphotos_56901233-stock-photo-gold-coat-of-arms-medieval.jpg&imgrefurl=https%3A%2F%2Fbr.depositphotos.com%2Fstock-photos%2Fescudo-guerra.html&tbnid=4nRBJxlzsQoKKM&vet=12ahUKEwij8_P4p8D1AhXNBrkGHcE7DUQQMygDegUIARDVAQ..i&docid=jg0hBuAZGWRXdM&w=422&h=600&q=escudos%20de%20guerra&ved=2ahUKEwij8_P4p8D1AhXNBrkGHcE7DUQQMygDegUIARDVAQ">
+        <br>
+        <img id="escudo_Viking" alt="escudo Viking" src="https://st2.depositphotos.com/3496663/45198/i/1600/depositphotos_451989578-stock-photo-watercolor-shield-of-scandinavian-vikings.jpg" width=150>
+        <br><br><br>
         <a href="https://br.depositphotos.com/stock-photos/escudo-guerra.html">
-        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fst.depositphotos.com%2F1035078%2F1802%2Fi%2F600%2Fdepositphotos_18029479-stock-photo-isolated-16th-century-war-shield.jpg&imgrefurl=https%3A%2F%2Fbr.depositphotos.com%2Fstock-photos%2Fescudo-guerra.html&tbnid=lUwS-J_9pXu8MM&vet=12ahUKEwij8_P4p8D1AhXNBrkGHcE7DUQQMygEegUIARDXAQ..i&docid=jg0hBuAZGWRXdM&w=443&h=600&q=escudos%20de%20guerra&ved=2ahUKEwij8_P4p8D1AhXNBrkGHcE7DUQQMygEegUIARDXAQ">
+        <img id="escudo_Medieval" alt="escudo Medieval" src="https://st.depositphotos.com/1064044/3122/i/950/depositphotos_31223795-stock-photo-vintage-shield.jpg" height=200 >
         </a>
         <!-- Modelo de um comentario em html -->
         <h2>Lista 1</h2>
@@ -35,13 +46,13 @@
             <li>Pato</li>
             <li>Carro</li>
             <li>Cachorro</li>
-        <ul/>
+        </ul>
         <h2>Lista 2</h2>
         <ol>
             <li>Pato</li>
             <li>Carro</li>
             <li>Cachorro</li>
-        <ol/>
+        </ol>
         <table>
             <tr>
                 <th>Nome</th>
