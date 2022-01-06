@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.borda{
+    
+    border: 5px dashed blue;
+    
+    
+    border-width: 5px;
+    
+    border-width: 5px 10px 15px 20px;
+    border-bottom-color: gray;
+    border-color: red;
+   
+    border-color: red green yellow blue;
+    border-radius: 5px;
+    
+}
+.borda_circulo{
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 50%;
+}
+
+.circulo{
+    border-radius: 50%;
+}
+
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.dotted{border-top-style: dotted;} pontinhado
+.dashed{border-style: dashed;} tracejado
+.solid{border-style: solid;} solido
+.none{border-style: none;} nenhum
+.hidden{border-style: hidden;} escondido
+
+.container{
+    background-color: red;
+    padding: 10px;
+    border: 5px solid blue;
+    margin: 10px;
+}
+
+.content{
+    background-color: #ddd;
+    outline: 5px solid green;
+    padding: 5px;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 10px solid blue;
+    box-sizing: border-box;
+}
+
+.square2{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+
+}
+
+*/
