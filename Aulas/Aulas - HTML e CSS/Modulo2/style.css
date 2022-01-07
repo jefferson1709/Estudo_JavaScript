@@ -3,14 +3,28 @@ body{
     margin: 0;
 }
 
+ul{
+    list-style-image: url();
+    list-style-position: inside;
+    padding: 10px;
+    margin: 0;
+    background-color: #f3e;
+}
 
+ol{
+    list-style-type: upper-alpha;
+    padding: 10px;
+    margin: 0;
+    background-color: #59e;
+}
 
-
-
-
-
-
-
+li{
+    border: 1px solid;
+    padding: 3px;
+    margin: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+}
 
 /*
 .borda{
@@ -78,5 +92,77 @@ body{
     background-color: yellow;
 
 }
+
+
+p{
+    color: red;
+    text-align: justify;
+    text-indent: 30px;
+    text-transform: uppercase;
+    text-decoration: line-through underline overline;
+    letter-spacing: 10px;
+    line-height: 15px;
+    word-spacing: 10px;
+    text-shadow: 2px;
+    text-shadow: 2px 2px 5px black;
+
+    font-family: Arial, "comic sans MS" , sans-serif;
+    font-style: italic;
+    font-weight: bold; 
+    font-weight: 900;
+    font-size: 25px;
+    font-variant: small-caps;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: MinhaFonte;
+    src: url();
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: crosshair;
+    background: #bc2035;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid #bc2035;
+}
+
+
+
+.links{
+    text-decoration: none;
+    color: blue;
+    cursor: crosshair;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid #bc2035;
+}
+
+.links:hover{
+    color: white;
+    background: #bc2035;
+}
+
+.links:active{
+    color: rgb(29, 4, 253);
+    background: #0400ff;
+}
+
+.links:visited{
+    color: red;
+
+}
+
 
 */
