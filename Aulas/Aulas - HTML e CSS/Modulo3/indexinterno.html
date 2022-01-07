@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Minha Primeira Pagina</title>
+        <style type="text/css">
+            body{font-size: 1.2rem;}
+            #container{
+                color: yellow;
+                background-color: blue;
+                width: 500px;
+                height: 300px;
+                overflow: auto;
+                overflow-y: scroll;             
+            }
+            .quadrado{
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                display: inline-block;
+                
+            }
+            .retangulo{
+                width: 200px;
+                height: 500px;
+                margin: auto;
+                display: inline-block;
+                overflow: auto;
+                
+            }
+            
+            .static{
+                position: static;
+            }
+            .relative{
+                position: relative;
+            }
+            .fixed{
+                position: fixed;
+            }
+            .absolute{
+                position: absolute;
+            }
+            .sticky{
+                position: sticky;
+                top: 0;
+            }
+            
+            
+            .bg-red{
+                background-color: red;
+            }
+            .bg-green{
+                background-color: green;
+            }
+            .bg-blue{
+                background-color: blue;
+            }
+
+            img{
+                height:150px;
+                display: block;
+                margin: auto;
+            }
+            .img-esq{
+                float: left;
+            }
+            .img-dir{
+                float: right;
+            }
+
+            div{
+                border: 1px solid black;
+                padding: 10px;
+                background-color: #b2c3a6;
+                overflow: auto;
+            }
+            p{
+                clear: none;
+            }
+            ul{
+                float: right;
+                list-style: none;
+                padding: 10px;
+                background-color: #a3b5c7;
+                margin: 5px;
+            }
+
+        </style>     
+    </head>   
+    <body>
+        <img src="https://st.depositphotos.com/1064044/3122/i/950/depositphotos_31223795-stock-photo-vintage-shield.jpg" >
+        <p id="container"> Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num 
+            copo é motivis de denguis.Atirei o pau no gatis, per gatis num 
+            morreus.Nullam volutpat risus nec leo commodo, ut interdum diam 
+            laoreet. Sed non consequat odio.Copo furadis é disculpa de bebadis,
+            arcu quam euismod magna.
+        </p>
+        <div class="static quadrado bg-blue"> </div>
+        <div class="relative quadrado bg-red"> </div>
+        <div class="absolute quadrado bg-red"> </div>
+        <div class="retangulo bg-blue"> 
+            <div class="quadrado bg-red"> </div>
+            <div class="quadrado bg-red"> </div>
+            <div class="quadrado bg-red"> </div>
+            <div class="quadrado bg-green sticky"> </div>
+            <div class="quadrado bg-red"> </div>
+            <div class="quadrado bg-red"> </div>
+            <div class="quadrado bg-red"> </div>
+            <div class="quadrado bg-red"> </div>
+        </div>
+        <div class="quadrado bg-green fixed"> </div>
+    <body>
+</html>
