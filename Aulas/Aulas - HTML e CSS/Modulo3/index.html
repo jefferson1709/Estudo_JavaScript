@@ -2,10 +2,81 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Minha Primeira Pagina</title>
-        <link href="style.css" rel="stylesheet">       
+        <title>Modulo Css Intermediario</title>
+        <link href="style.css" rel="stylesheet"> 
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline-block;
+            color: white;
+            margin-right: 15px;
+        }
+        
+        .header{
+            overflow: hidden;
+            margin: auto;
+            width: 80%;
+            background: #5c57a4;
+            padding: 15px;
+            font-size: 18px;
+        }
+        .menu{
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        .logo{
+            float: left;
+            display: inline-block;
+            color: white;
+        }
+        
+        @media screen and (max-width: 700px) {
+        
+            .header{
+                background: gray;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            
+            .header{
+                background: red;
+            }
+            .menu{
+                margin-top: 20px;
+                float: none;
+                text-align: center;
+            }
+            .logo{
+                float: none;
+                text-align: center;
+            }
+        
+            li{
+                float: none;
+                margin-bottom: 5px;
+                padding: 10px;
+            }
+        }      
     </head>   
     <body>
+        <div class="header"> 
+            <div class="logo"> 
+                logo
+            </div>
+            <ul class="menu">
+                <li>Home</li>
+                <li>Cursos</li>
+                <li>sobre</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+
 
     <body>
 </html>
