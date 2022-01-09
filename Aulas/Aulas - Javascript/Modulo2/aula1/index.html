@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Documento</title>
+		<style>
+			div{
+				display: inline-block;
+				padding:20xp;
+				font-size:2rm;
+				background-color: cornflowerblue;
+				color: aliceblue;
+			}
+		</style>
+		<script>
+            function h1click(){
+				console.log('H1 foi clicado')
+			}
+			function h1hide(){
+				let h1 = document.getElementsByTagName("h1")[0];
+				h1.style.dysplay="none";
+			}
+
+			function h2change(i){
+				let h2 = document.getElementsByTagName("h2")[0];
+				console.log(h2);
+				h2.innerText=i.value;
+			}
+        </script>
+	</head>
+	<body>
+		<h1 onclick="h1click()">Clique em  mim</h1>
+		<h1 onclick="console.log(this)">Clique em  mim</h1>
+		<h1 onclick="this.style.color = 'red' ">Clique em  mim</h1>
+
+		<h2>Clique em  mim</h2>
+        <input type="text" onchange="h2change(this)">
+		<input type="text" oninput="h2change(this)">
+
+		<div onclick="h1hide()">click</div>
+	</body>
+    
+</html>
