@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Documento</title>
+		<script>
+            let pessoas = ["jefferson", "jasmine", "jose", "adriana", "Pamela", "pedro", "paulo", "Alex"]
+			function sortear(){
+				let np = pessoas.length;
+				let ns = Math.floor(Math.random() * np);
+				document.getElementById("d").innerHTML = pessoas[ns];
+			}
+
+			var numero = 0;
+			var timer;
+			function atualizarTexto(){
+				let h = document.getElementsByTagName("h1")[0]
+				h.innerHTML += " " + numero;
+				numero++;
+			}
+			function iniciar(){
+				timer = setTimeout(atualizarTexto, 3000);
+			}
+			function parar(){
+				clearTimeout(timer);
+			}
+
+        </script>
+	</head>
+	<body onload="loaded()">
+		<h1>Titulo</h1>
+		<h1 id="d">teste</h1>
+		<button onclick="sortear()"> sortear </button>
+		<input onclick="iniciar()" type="submit" value="Iniciar">
+		<input onclick="parar()" type="submit" value="parar">
+	</body>
+    
+</html>
+
