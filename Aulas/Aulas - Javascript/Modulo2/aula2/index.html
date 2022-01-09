@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Documento</title>
+		<style>
+			img{
+				width: 200px;
+				margin-bottom:25;
+			}
+			div{
+				display: inline;
+				padding:10xp;
+				font-size:2rm;
+				background-color: cornflowerblue;
+				color: aliceblue;
+			}
+		</style>
+		<script>
+            function onOver(elemento){
+				elemento.style.backgroundColor = "red";
+			}
+			function onOut(elemento){
+				elemento.style.backgroundColor = "cornflowerblue";
+			}
+			function loaded(){
+				console.log('pagina completamente carregada')
+				let t = document.getElementById("titulo")
+				//t.onclick = mudartext
+				t.addEventListener("mouseover",mudartext)
+				t.addEventListener("mouseout",mouseOut)
+			}
+			function mudartext(){
+				this.innerHTML = "novo texto";
+			}
+			function mouseOut(){
+				this.innerHTML = "Mouse fora do elemento";
+			}
+        </script>
+	</head>
+	<body onload="loaded()">
+		<h1 id="titulo">teste</h1>
+		<img src="https://st.depositphotos.com/1064044/3122/i/950/depositphotos_31223795-stock-photo-vintage-shield.jpg">
+		<br>
+		<div onmouseover="onOver(this)" onmouseout="onOut(this)">click</div>
+		<p onmouseover="onOver(this)" onmouseout="onOut(this)"> Texto para teste</p>
+		
+	</body>
+    
+</html>
+
