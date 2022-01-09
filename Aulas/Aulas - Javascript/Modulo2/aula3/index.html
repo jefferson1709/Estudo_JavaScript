@@ -6,8 +6,21 @@
 		<title>this</title>
 	</head>
 	<body onload="loaded()">
-		<h1 id="t1">teste</h1>
+		<h1 id="t1" onclick="f(this)" >teste</h1>
 		<h2 id="t2"> Texto para teste</h2>
+
+		<div id="d1"> 
+			<h1 >Titulo 1</h1>
+			<p> Texto para teste</p>
+		</div>
+
+		<div id="d2"> 
+			<h1 >Titulo 2</h1>
+			<p> Texto para teste</p>
+		</div>
+
+		<h1 id="nome"></h1>
+		<input type="text" oninput="atualizar(this)">
 		
 		<script>
             let t1= document.getElementById("t1")
@@ -20,6 +33,61 @@
 				this.innerHTML = this.innerHTML.toUpperCase();
 			}
 			
+			function f(e){
+				console.log("teste")
+				console.log(e)
+				console.log(this)
+			}
+			function f1(e){
+				console.log("teste f1")
+				console.log(e)
+				console.log(e.target)
+				console.log(this)
+			}
+
+			window.onload = function(){
+				let h1 = document.getElementsByTagName("h1")[0]
+				h1.addEventListener("click",f1);
+
+				let d1 = document.getElementById("d1")
+				let dd1 = d1.children[0]
+				console.log(dd1)
+				console.log(dd1.parentElement)
+
+				console.log(document.body.children[0].children)
+
+				for (let h of h1){
+					console.log(h)
+					h1.addEventListener("click", qop)
+				}
+
+				function qop(){
+					let t = e.target;
+					console.log(e.target)
+				}
+
+				let nome = localStorage.getItem("nome");
+				let h1 = document.getElementById("nome");
+				h1.innerHTML = nome;
+
+				fuction atualizar(element){
+					let valor = element.value;
+					console.log(valor)
+					let h1 = document.getElementById("nome");
+					h1.innerHTML = valor;
+					localStorage.setItem("nome",valor);
+				}
+
+			}
+
+			let a = {nome: "Jefferson", n1: 7.3}
+			localStorage.setItem("aluno", JSON.stringify(a));
+
+			let a = localStorage.getItem("aluno");
+			console.log(JSON.parse(a));
+
+			localStorage.clear();
+
         </script>
 	</body>
     
