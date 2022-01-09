@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Modulo HTML avançado</title>
+		<link rel="stylesheet" href="./styles/style.css">
+	</head>
+	<body>
+		<video id="video1" preload="none" controls autoplau muted loop width="540" src="./arquivos/video.mp4" poster="./arquivos/poster.png"></video>
+		
+		<div class="container">
+			<video class="video" src="./arquivos/video.mp4" poster="./arquivos/poster.png"></video>
+			<div class="controle">
+				<img class="btn" onclick="retroceder()" src="./arquivos/back.png">
+				<img class="btn" onclick="avancar()" src="./arquivos/forward.png">
+				<img class="btn" onclick="aumentar_velocidade()" src="./arquivos/increase.png">
+				<img class="btn" onclick="diminuir_velocidade()" src="./arquivos/decrease.png">
+				<img class="btn" onclick="play()" src="./arquivos/play.png">
+				<img class="btn" onclick="stop()" src="./arquivos/stop.png">
+			</div>
+		</div>
+
+		<h1>Esta pagina e a index </h1>
+		<iframe class="frame" src="./pag2.html"><iframe>
+		<audio controls>
+			<source src="./arquivos/audio1.ogg" type="audio/ogg">
+			<source src="./arquivos/audio2.mp3" type="audio/mpeg">
+		<script src="./scripts/script.js"></script>
+	</body>
+</html>
+
