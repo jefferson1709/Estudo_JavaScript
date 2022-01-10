@@ -90,3 +90,14 @@ setInterval(function(){
     }
     drawCircle(circle);
 },250)
+
+let img = document.getElementById("icon");
+ctx.drawImage(img, 20,20);
+
+let img = new Image();
+img.src="./icon.png";
+img.onload = desenharImg;
+
+function desenharImg(){
+    ctx.drawImage(this, 20, 20, this.naturalWidth/2, this.naturalHeight/2)
+}
