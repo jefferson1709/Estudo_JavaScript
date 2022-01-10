@@ -1,4 +1,5 @@
 #tela{
     background-color: bisque;
-    
+    position: relative;
+    overflow: hidden;
 }
