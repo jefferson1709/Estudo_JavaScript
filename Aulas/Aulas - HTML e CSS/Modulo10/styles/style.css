@@ -1,0 +1,109 @@
+:root{
+    --var-color: aqua;
+    --square-size: 200px;
+}
+
+.p2{
+    color: var(--var-color);
+    font-size: 25px;
+}
+.p3{
+    color: var(--var-color);
+    font-size: 14px;
+}
+.sqr1{
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: black;
+}
+.sqr2{
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-between;
+
+    /*
+    flex-direction: row;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    flex-flow: column wrap;
+
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+
+    align-items: center;
+    align-items: stretch;
+    align-items: flex-end;
+    align-items: flex-start;
+
+    align-content: center;
+    align-content: flex-end;
+    align-content: flex-start;
+    align-content: space-around;
+    align-content: space-between;
+
+    */
+
+
+    background-color: darkgray;
+    height: 400px;
+    color: white;
+}
+.r1{
+    background-color: red;
+    order: 3;
+}
+.r2{
+    background-color: blue;
+    order: -2;
+}
+.r3{
+    background-color: green;
+    flex-grow: 2;
+    order: 1;
+    align-self: center;
+
+    /*
+
+    align-self: center;
+    flex-shrink: 0;
+    flex-shrink: 1;
+    
+    flex-grow: 0;
+    flex-grow: 1;
+
+    order: 1;
+    */
+}
+.rect{
+    width: 100px;
+    height: 100px;
+
+
+
+
+
+
+    /*
+    flex-shrink: 0;
+    flex-shrink: 1;
+    
+    flex-grow: 0;
+    flex-grow: 1;
+
+    */
+}
