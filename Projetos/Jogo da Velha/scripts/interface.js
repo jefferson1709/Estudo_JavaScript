@@ -4,26 +4,34 @@ document.addEventListener('DOMContentLoaded', () => {
     squares.forEach((square) => {
         square.addEventListener('click', handleClick);
     })
-
 })
 
 function handleClick(event){
 
     let square = event.target;
-    let position = square.id;
+    let postion = square.id;
 
-    handleMove(postion);
-    updateSquares();
+    if(handleMove(postion)){
+        setTimeout(() => {
+            alert("O jogo Acabou - O vencedor foi " + playerTime);
+        },10);
+    };
+    updateSquares(postion);
+}
+
+function updateSquares(postion){
+    let square = document.getElementById(postion.toString());
+    let symbol = board[postion];
+    square.innerHTML = `<div class='${symbol}'></div>`
 }
 
 function updateSquares(){
     let squares = document.querySelectorAll(".square");
     squares.forEach((square) => {
-        let position = square.id;
+        let postion = square.id;
         let symbol = board[postion];
-
-        if(Symbol != ''){
+        if(symbol != ''){
             square.innerHTML = `<div class='${symbol}'></div>`
         }
-    })
+    })    
 }

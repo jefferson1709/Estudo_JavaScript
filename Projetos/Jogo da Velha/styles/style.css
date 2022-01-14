@@ -19,7 +19,7 @@ h1{
 }
 .o:after{
     position: absolute;
-    content: "\1F6E1";
+    content: "\1F6E1"; 
     font-size: 50px;
     line-height: 100px;
     top: 0;
