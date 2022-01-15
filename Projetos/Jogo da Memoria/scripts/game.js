@@ -81,12 +81,12 @@ let game = {
         return tech + parseInt(Math.random()*1000);
     },
 
-    shurffleCards: function (cards){
+    shurffleCards: function (){
         let currentIndex = this.cards.length;
         let randomIndex=0;
     
         while(currentIndex !==0){
-            radomIndex = Math.floor(Math.random()*currentIndex);
+            randomIndex = Math.floor(Math.random()*currentIndex);
             currentIndex--;
             [this.cards[randomIndex], this.cards[currentIndex]] = [this.cards[currentIndex], this.cards[randomIndex]];
         }
