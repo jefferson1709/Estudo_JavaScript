@@ -5,7 +5,11 @@
 }
 
 body{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;
+    background-color: #c7cdd3; 
 }
 
 .card{
@@ -59,4 +63,12 @@ body{
     border: none;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+#gameBoard{
+    background-color: tomato;
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr ;
+    gap: 20px;
 }
