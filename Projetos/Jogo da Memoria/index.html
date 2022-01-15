@@ -6,19 +6,19 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Projeto2 - jogo da memoria</title>
 		<link rel="stylesheet" href="./styles/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		
-		<div id="1" class="card" data-icon="bootstrap">
-			<div class="card_front">
-				<img class="icon" src="">
-			</div>
-			<div class="card_back">
-				&lt/&gt
+		<div id="gameBoard">
+			<div id="1" class="card" data-icon="bootstrap">
+				<div class="card_front">
+					<img class="icon" src="">
+				</div>
+				<div class="card_back">
+					&lt/&gt
+				</div>
 			</div>
 		</div>
-
-
 
 		<div id="gameOver">
 			<div>
@@ -27,6 +27,7 @@
 			<button id="restart" onclick="restart()">Jogue Novamente</button>
 		</div>
 
+		<script src="./scripts/game.js"></script>
 		<script src="./scripts/script.js"></script>
 	</body>
 </html>

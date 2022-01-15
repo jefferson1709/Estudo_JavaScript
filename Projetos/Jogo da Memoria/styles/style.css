@@ -10,6 +10,7 @@ body{
     align-items: center;  
     height: 100vh;
     background-color: #c7cdd3; 
+    font-family: 'Righteous', sans-serif;
 }
 
 .card{
@@ -32,8 +33,13 @@ body{
     backface-visibility: hidden;
 }
 
+.flip{
+    transform: rotateY(180deg);
+}
+
 .card_front{
     background-color: #101c2c;
+    transform: rotateY(180deg);
 }
 .card_back{
     color: #101c2c;
@@ -43,7 +49,7 @@ body{
 }
 
 #gameOver{
-    position: absolute;
+    position: hidden;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -66,9 +72,8 @@ body{
 }
 
 #gameBoard{
-    background-color: tomato;
     max-width: 700px;
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr ;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr ;
     gap: 20px;
 }
