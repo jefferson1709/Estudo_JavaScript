@@ -41,7 +41,7 @@ function calcular(event){
     resultado.innerHTML = '<br/>  Seu resultado foi: '+ imc + '<br/> cuidado voce esta obeso'
   }
 
-  document.getElementById('peso').value = '';
-  document.getElementById('altura').value = '';
+  //document.getElementById('peso').value = '';
+  //document.getElementById('altura').value = '';
 
 }
